@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Delicious Bites｜美味一口</title>
+
+  <!-- Bootstrap CSS -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.7/css/bootstrap.min.css"
+    crossorigin="anonymous"
+  />
+
+  <!-- AOS CSS -->
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    rel="stylesheet"
+  />
+
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fff8f0;
+    }
+
+    .navbar {
+      background-color: #b22222;
+    }
+
+    .navbar-brand,
+    .nav-link,
+    .btn {
+      color: white !important;
+    }
+
+    .carousel-item > img {
+      height: 500px;
+      object-fit: cover;
+    }
+
+    .card {
+      border: none;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h5 {
+      color: #b22222;
+    }
+
+    .card-img-top {
+      height: 220px;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+
+    .card:hover .card-img-top {
+      transform: scale(1.05);
+    }
+
+    footer {
+      background-color: #b22222;
+      color: white;
+      padding: 1.5rem 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="#">🍽 Delicious Bites｜美味一口</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon bg-light"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#carousel">首頁</a></li>
+          <li class="nav-item"><a class="nav-link" href="#menu">菜單推薦</a></li>
+          <li class="nav-item"><a class="nav-link" href="#video">影片介紹</a></li>
+          <li class="nav-item"><a class="nav-link" href="#reservation">線上訂位</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Carousel -->
+  <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-aos="zoom-in">
+        <img src="images/food-carousel1.jpg" class="d-block w-100" alt="主視覺美食">
+      </div>
+      <div class="carousel-item" data-aos="zoom-in">
+        <img src="images/food-carousel2.jpg" class="d-block w-100" alt="次要美食">
+      </div>
+      <div class="carousel-item" data-aos="zoom-in">
+        <img src="images/food-carousel3.jpg" class="d-block w-100" alt="其他美食">
+      </div>
+    </div>
+  </div>
+
+  <!-- Menu Section -->
+  <div class="container my-5" id="menu">
+    <h2 class="text-center mb-4">🍝 推薦餐點</h2>
+    <div class="row">
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="0">
+        <div class="card mb-4">
+          <img src="images/food-menu1.jpg" class="card-img-top img-fluid" alt="餐點 1">
+          <div class="card-body">
+            <h5 class="card-title">義大利海鮮麵</h5>
+            <p class="card-text">新鮮海味與手工麵條的完美結合。</p>
+            <a href="#" class="btn btn-danger">了解更多</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="150">
+        <div class="card mb-4">
+          <img src="images/food-menu2.jpg" class="card-img-top img-fluid" alt="餐點 2">
+          <div class="card-body">
+            <h5 class="card-title">炙燒牛排</h5>
+            <p class="card-text">外酥內嫩，配上特製紅酒醬汁。</p>
+            <a href="#" class="btn btn-danger">了解更多</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+        <div class="card mb-4">
+          <img src="images/food-menu3.jpg" class="card-img-top img-fluid" alt="餐點 3">
+          <div class="card-body">
+            <h5 class="card-title">香煎鮭魚</h5>
+            <p class="card-text">簡單調味帶出鮮甜風味。</p>
+            <a href="#" class="btn btn-danger">了解更多</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Video Section -->
+  <div class="container my-5" id="video">
+    <h2 class="text-center mb-4">🎥 影片</h2>
+    <div class="row" data-aos="fade-up">
+      <div class="col-md-8 mx-auto">
+        <div class="ratio ratio-16x9">
+          <iframe src="https://www.youtube.com/embed/kmsfLbORF2o?rel=0" 
+                  title="Southwest Ground Turkey Stuffed Peppers Cooking Tutorial" 
+                  allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Reservation Section -->
+  <div class="container my-5" id="reservation">
+    <h2 class="text-center mb-4">📅 線上訂位</h2>
+    <div class="row justify-content-center" data-aos="fade-up">
+      <div class="col-md-6">
+        <form id="bookingForm">
+          <div class="mb-3">
+            <label for="name" class="form-label">姓名</label>
+            <input type="text" class="form-control" id="name" placeholder="請輸入姓名" required>
+          </div>
+          <div class="mb-3">
+            <label for="phone" class="form-label">電話</label>
+            <input type="tel" class="form-control" id="phone" placeholder="例如：0912-345-678" required>
+          </div>
+          <div class="mb-3">
+            <label for="date" class="form-label">訂位日期</label>
+            <input type="date" class="form-control" id="date" required>
+          </div>
+          <div class="mb-3">
+            <label for="people" class="form-label">人數</label>
+            <select class="form-select" id="people" required>
+              <option value="">請選擇人數</option>
+              <option value="1">1 人</option>
+              <option value="2">2 人</option>
+              <option value="3">3 人</option>
+              <option value="4">4 人</option>
+              <option value="5">5 人</option>
+              <option value="6">6 人以上</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-danger w-100">送出訂位</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="text-center">
+    <div class="container">
+      <p class="mb-0">© 2025 Delicious Bites. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.7/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init();
+
+    // 表單送出提示
+    document.getElementById('bookingForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('感謝您的訂位，我們將盡快與您聯繫！');
+      this.reset();
+    });
+  </script>
+</body>
+</html>
